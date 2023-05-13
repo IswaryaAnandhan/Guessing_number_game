@@ -1,0 +1,224 @@
+
+.header {
+  background-color: #243860;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.name{
+  font-weight: 700;
+  color: blue;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  font-size: 30px;
+}
+
+.subtitle{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.input{
+  border-radius: 8px;
+  padding: 13px 22px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+
+.guesses {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  outline: 0;
+  padding: 10px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.guesses:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.guesses:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .guesses {
+    padding: 16px 48px;
+  }
+  .start{
+    padding: 10px 12px;
+  }
+}
+
+.previousguess{
+  font-size: 25px;
+  color: rgb(68, 66, 66);
+  font-weight: 500;
+  text-align: center;
+}
+.list-group {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+  font-size: 20px;
+}
+ol .horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ol .horizontal-list li {
+		display: inline;
+	}
+form{
+  padding-left: 30px;
+  text-align: center;
+font-weight: 400;
+}
+
+.guess {
+  display: inline-block;
+  background-color: #3b2a53;
+ padding-left: 10px;
+  width: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+.score{
+  text-align: center;
+  font-size: 40px;
+}
+
+.game{
+  text-align: center;
+  margin-top: 80px;
+}
+.start {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.start:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.start:main,
+.start:focus {
+  user-select: auto;
+}
+
+.start:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.start:disabled {
+  cursor: auto;
+}
+
+table {
+  overflow-x:auto;
+  border: 1px;
+  width: 100%;
+}
+th{
+  color: white !important;
+  font-size: 20px;
+  background-color: black;
+}
+td{
+  text-align: center;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: rgb(14, 14, 127);
+  
+}
+
+tr:hover {background-color: skyblue;}
+
+
+.message{
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  padding: 20px 0;
+  font-size: 22px;
+}
